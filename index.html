@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI × Mental Health — Ecosystem Map</title>
+<meta name="description" content="A living landscape of organizations, researchers, advocates, policymakers, and communities shaping how AI intersects with mental health, therapy, and emotional wellbeing.">
+<meta property="og:title" content="AI × Mental Health Ecosystem Map">
+<meta property="og:description" content="A collaborative, open-source landscape of 90+ organizations across 12 categories shaping AI and mental health.">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0f0e; --surface: #141614; --surface2: #1a1d1a;
+    --border: rgba(255,255,255,0.07); --text: #e8ebe8;
+    --text-muted: #7a8a7a; --text-dim: #4a5a4a;
+    --cat-consumer: #5ecfae; --cat-clinical: #6eb5ff; --cat-research: #c4a4ff;
+    --cat-nonprofit: #ffb347; --cat-policy: #ff7e7e; --cat-investors: #ffd166;
+    --cat-civil: #a8e6cf; --cat-media: #f7a8d8; --cat-philanthropy: #b8d4a8;
+    --cat-private: #acd4f7; --cat-community: #f7c8a8; --cat-professional: #d4b8f7;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Instrument Sans', sans-serif; min-height: 100vh; overflow-x: hidden; }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 9999; opacity: 0.35;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  }
+  header { padding: 3rem 3rem 2rem; border-bottom: 1px solid var(--border); display: flex; align-items: flex-end; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
+  .header-left h1 { font-family: 'DM Serif Display', serif; font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.1; letter-spacing: -0.02em; }
+  .header-left h1 em { font-style: italic; color: var(--cat-consumer); }
+  .header-left p { margin-top: 0.75rem; color: var(--text-muted); font-size: 0.9rem; max-width: 520px; line-height: 1.6; }
+  .header-meta { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
+  .badge { font-family: 'DM Mono', monospace; font-size: 0.72rem; padding: 0.35rem 0.75rem; border-radius: 2px; border: 1px solid var(--border); color: var(--text-muted); letter-spacing: 0.05em; text-transform: uppercase; }
+  .badge.live { border-color: var(--cat-consumer); color: var(--cat-consumer); }
+  .contribute-btn { font-family: 'DM Mono', monospace; font-size: 0.75rem; padding: 0.5rem 1.2rem; background: transparent; border: 1px solid var(--cat-consumer); color: var(--cat-consumer); border-radius: 2px; cursor: pointer; letter-spacing: 0.05em; text-transform: uppercase; transition: all 0.2s; text-decoration: none; display: inline-block; }
+  .contribute-btn:hover { background: var(--cat-consumer); color: var(--bg); }
+  .stats-bar { display: flex; gap: 2rem; padding: 1rem 3rem; border-bottom: 1px solid var(--border); flex-wrap: wrap; align-items: center; }
+  .stat { display: flex; flex-direction: column; gap: 0.15rem; }
+  .stat-num { font-family: 'DM Serif Display', serif; font-size: 1.4rem; line-height: 1; }
+  .stat-label { font-family: 'DM Mono', monospace; font-size: 0.65rem; color: var(--text-dim); letter-spacing: 0.04em; text-transform: uppercase; }
+  .controls { padding: 1.25rem 3rem; display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap; border-bottom: 1px solid var(--border); position: sticky; top: 0; background: rgba(13,15,14,0.96); backdrop-filter: blur(14px); z-index: 100; }
+  .search-wrap { position: relative; min-width: 200px; max-width: 300px; flex-shrink: 0; }
+  .search-wrap input { width: 100%; background: var(--surface); border: 1px solid var(--border); color: var(--text); font-family: 'Instrument Sans', sans-serif; font-size: 0.875rem; padding: 0.55rem 0.75rem 0.55rem 2.1rem; border-radius: 2px; outline: none; transition: border-color 0.2s; }
+  .search-wrap input:focus { border-color: rgba(255,255,255,0.2); }
+  .search-wrap input::placeholder { color: var(--text-dim); }
+  .search-icon { position: absolute; left: 0.65rem; top: 50%; transform: translateY(-50%); color: var(--text-dim); font-size: 0.85rem; }
+  .filters { display: flex; gap: 0.35rem; flex-wrap: wrap; flex: 1; }
+  .filter-btn { font-family: 'DM Mono', monospace; font-size: 0.65rem; padding: 0.3rem 0.65rem; border-radius: 2px; border: 1px solid transparent; cursor: pointer; letter-spacing: 0.04em; transition: all 0.18s; white-space: nowrap; background: var(--surface); color: var(--text-muted); }
+  .filter-btn:hover { border-color: rgba(255,255,255,0.12); color: var(--text); }
+  .filter-btn.active { color: #0d0f0e !important; border-color: transparent !important; font-weight: 600; }
+  .count-display { font-family: 'DM Mono', monospace; font-size: 0.7rem; color: var(--text-dim); white-space: nowrap; margin-left: auto; }
+  .main { padding: 2rem 3rem 4rem; }
+  .loading { text-align: center; padding: 4rem; font-family: 'DM Mono', monospace; color: var(--text-dim); font-size: 0.85rem; }
+  .category-section { margin-bottom: 3rem; animation: fadeUp 0.35s ease both; }
+  @keyframes fadeUp { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+  .category-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border); }
+  .cat-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .category-header h2 { font-family: 'DM Serif Display', serif; font-size: 1.15rem; letter-spacing: -0.01em; }
+  .cat-count { font-family: 'DM Mono', monospace; font-size: 0.68rem; color: var(--text-dim); margin-left: auto; }
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 0.65rem; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 3px; padding: 0.95rem 1.05rem 0.95rem 1.25rem; cursor: pointer; transition: all 0.18s; position: relative; overflow: hidden; }
+  .card:hover { background: var(--surface2); border-color: rgba(255,255,255,0.12); transform: translateY(-1px); }
+  .card-stripe { position: absolute; left: 0; top: 0; bottom: 0; width: 4px; display: flex; flex-direction: column; }
+  .card-name { font-weight: 600; font-size: 0.875rem; line-height: 1.3; margin-bottom: 0.25rem; color: var(--text); }
+  .card-type { font-family: 'DM Mono', monospace; font-size: 0.63rem; color: var(--text-dim); letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 0.45rem; }
+  .card-desc { font-size: 0.78rem; color: var(--text-muted); line-height: 1.5; }
+  .card-footer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.55rem; flex-wrap: wrap; }
+  .tag { font-family: 'DM Mono', monospace; font-size: 0.58rem; padding: 0.12rem 0.38rem; border-radius: 2px; background: rgba(255,255,255,0.05); color: var(--text-dim); letter-spacing: 0.03em; }
+  .multi-badge { display: flex; gap: 2px; margin-left: auto; align-items: center; }
+  .multi-dot { width: 6px; height: 6px; border-radius: 50%; }
+  .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.78); z-index: 1000; display: flex; align-items: center; justify-content: center; padding: 2rem; opacity: 0; pointer-events: none; transition: opacity 0.2s; }
+  .modal-overlay.open { opacity: 1; pointer-events: all; }
+  .modal { background: var(--surface); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; padding: 2rem; max-width: 580px; width: 100%; max-height: 82vh; overflow-y: auto; transform: translateY(14px); transition: transform 0.22s; }
+  .modal-overlay.open .modal { transform: translateY(0); }
+  .modal-cats { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 0.6rem; }
+  .modal-cat-pill { font-family: 'DM Mono', monospace; font-size: 0.63rem; padding: 0.2rem 0.55rem; border-radius: 2px; letter-spacing: 0.05em; text-transform: uppercase; color: #0d0f0e; font-weight: 600; }
+  .modal h3 { font-family: 'DM Serif Display', serif; font-size: 1.65rem; margin-bottom: 0.2rem; line-height: 1.15; }
+  .modal-type { font-family: 'DM Mono', monospace; font-size: 0.7rem; color: var(--text-dim); letter-spacing: 0.04em; margin-bottom: 1rem; }
+  .modal-desc { font-size: 0.88rem; line-height: 1.75; color: var(--text-muted); margin-bottom: 1.25rem; }
+  .modal-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.5rem; }
+  .modal-link { display: inline-block; font-family: 'DM Mono', monospace; font-size: 0.75rem; color: var(--text-muted); text-decoration: none; border-bottom: 1px solid var(--border); padding-bottom: 0.1rem; transition: color 0.15s, border-color 0.15s; }
+  .modal-link:hover { color: var(--text); border-color: rgba(255,255,255,0.3); }
+  .modal-close { float: right; background: none; border: none; color: var(--text-muted); font-size: 1.2rem; cursor: pointer; padding: 0.2rem; margin: -0.5rem -0.5rem 0 0; transition: color 0.15s; }
+  .modal-close:hover { color: var(--text); }
+  .empty-state { text-align: center; padding: 4rem 2rem; color: var(--text-dim); font-family: 'DM Mono', monospace; font-size: 0.85rem; }
+  @media (max-width: 640px) {
+    header, .controls, .main, .stats-bar { padding-left: 1.25rem; padding-right: 1.25rem; }
+    .controls { position: relative; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <h1>AI × <em>Mental Health</em><br>Ecosystem Map</h1>
+    <p>A living landscape of organizations, researchers, advocates, policymakers, and communities shaping how AI intersects with mental health, therapy, and emotional wellbeing. Organizations may span multiple categories.</p>
+  </div>
+  <div class="header-meta">
+    <span class="badge live">● Live / Collaborative</span>
+    <span class="badge" id="versionBadge">Loading…</span>
+    <a class="contribute-btn" id="contributeBtn" href="#" target="_blank">+ Suggest an entry</a>
+  </div>
+</header>
+
+<div class="stats-bar" id="statsBar"><div class="loading">Loading data…</div></div>
+
+<div class="controls">
+  <div class="search-wrap">
+    <span class="search-icon">⌕</span>
+    <input type="text" id="searchInput" placeholder="Search organizations…" />
+  </div>
+  <div class="filters" id="filterBtns"></div>
+  <div class="count-display" id="countDisplay"></div>
+</div>
+
+<main class="main" id="mainContent"><div class="loading">Loading organizations…</div></main>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="modal">
+    <button class="modal-close" id="modalClose">✕</button>
+    <div class="modal-cats" id="modalCats"></div>
+    <h3 id="modalName"></h3>
+    <div class="modal-type" id="modalType"></div>
+    <p class="modal-desc" id="modalDesc"></p>
+    <div class="modal-tags" id="modalTags"></div>
+    <a class="modal-link" id="modalLink" href="#" target="_blank"></a>
+  </div>
+</div>
+
+<script>
+// ─── Categories (labels + colors — not in JSON) ───────────
+const CATEGORIES = [
+  { id: 'consumer',     label: 'Consumer Apps (B2C)',              color: '#5ecfae' },
+  { id: 'clinical',     label: 'Clinical & Enterprise (B2B)',      color: '#6eb5ff' },
+  { id: 'research',     label: 'Research & Academia',              color: '#c4a4ff' },
+  { id: 'nonprofit',    label: 'Nonprofits & Advocacy',            color: '#ffb347' },
+  { id: 'policy',       label: 'Policy & Government',              color: '#ff7e7e' },
+  { id: 'investors',    label: 'Investors & Funders',              color: '#ffd166' },
+  { id: 'civil',        label: 'Civil Society & NGOs',             color: '#a8e6cf' },
+  { id: 'professional', label: 'Professional Associations',        color: '#d4b8f7' },
+  { id: 'media',        label: 'Media, Journalists & Influencers', color: '#f7a8d8' },
+  { id: 'philanthropy', label: 'Philanthropy',                     color: '#b8d4a8' },
+  { id: 'private',      label: 'Private Sector / Tech',            color: '#acd4f7' },
+  { id: 'community',    label: 'Impacted Communities',             color: '#f7c8a8' },
+];
+
+function getCat(id) { return CATEGORIES.find(c => c.id === id); }
+function getCatColor(id) { return getCat(id)?.color || '#888'; }
+function getCatLabel(id) { return getCat(id)?.label || id; }
+
+let ORGS = [];
+let activeFilter = 'all';
+let searchTerm = '';
+
+// ─── Load data ────────────────────────────────────────────
+async function loadData() {
+  try {
+    const res = await fetch('orgs.json');
+    if (!res.ok) throw new Error('fetch failed');
+    ORGS = await res.json();
+    init();
+  } catch (e) {
+    document.getElementById('mainContent').innerHTML =
+      '<div class="empty-state">Could not load orgs.json.<br>Make sure you\'re serving this via a web server (not file://).</div>';
+    document.getElementById('statsBar').innerHTML = '';
+  }
+}
+
+function init() {
+  // Set contribute link to GitHub Issues
+  const repoUrl = document.querySelector('meta[name="repo-url"]')?.content || 'https://github.com/YOUR_USERNAME/YOUR_REPO';
+  document.getElementById('contributeBtn').href = repoUrl + '/issues/new?template=add-organization.yml';
+  document.getElementById('versionBadge').textContent = `${ORGS.length} entries · 2025`;
+  buildStats();
+  buildFilters();
+  render();
+}
+
+// ─── Stats ────────────────────────────────────────────────
+function buildStats() {
+  const multiCat = ORGS.filter(o => o.cats.length > 1).length;
+  document.getElementById('statsBar').innerHTML = `
+    <div class="stat"><span class="stat-num" style="color:var(--cat-consumer)">${ORGS.length}</span><span class="stat-label">Organizations</span></div>
+    <div class="stat"><span class="stat-num" style="color:var(--cat-clinical)">${CATEGORIES.length}</span><span class="stat-label">Categories</span></div>
+    <div class="stat"><span class="stat-num" style="color:var(--cat-research)">${multiCat}</span><span class="stat-label">Multi-category</span></div>
+    <div class="stat"><span class="stat-num" style="color:var(--cat-community)">${ORGS.filter(o=>o.cats.includes('community')).length}</span><span class="stat-label">Community voices</span></div>
+    <div class="stat" style="margin-left:auto"><span class="stat-label" style="line-height:1.8;text-align:right;max-width:200px">Open-source · suggest entries via GitHub Issues<br>Last updated 2025</span></div>
+  `;
+}
+
+// ─── Filters ─────────────────────────────────────────────
+function buildFilters() {
+  const container = document.getElementById('filterBtns');
+  container.innerHTML = '';
+
+  const allBtn = document.createElement('button');
+  allBtn.className = 'filter-btn active';
+  allBtn.textContent = 'All';
+  allBtn.style.cssText = 'background:#252825;color:#e8ebe8;';
+  allBtn.dataset.cat = 'all';
+  allBtn.onclick = () => setFilter('all');
+  container.appendChild(allBtn);
+
+  CATEGORIES.forEach(cat => {
+    const count = ORGS.filter(o => o.cats.includes(cat.id)).length;
+    const btn = document.createElement('button');
+    btn.className = 'filter-btn';
+    btn.textContent = `${cat.label} (${count})`;
+    btn.dataset.cat = cat.id;
+    btn.onclick = () => setFilter(cat.id);
+    container.appendChild(btn);
+  });
+}
+
+function setFilter(catId) {
+  activeFilter = catId;
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    const cat = CATEGORIES.find(c => c.id === btn.dataset.cat);
+    const isActive = btn.dataset.cat === catId || (catId === 'all' && btn.dataset.cat === 'all');
+    btn.classList.toggle('active', isActive);
+    btn.style.background = isActive ? (cat ? cat.color : '#252825') : '';
+    btn.style.color = isActive ? (cat ? '#0d0f0e' : '#e8ebe8') : '';
+  });
+  render();
+}
+
+// ─── Render ───────────────────────────────────────────────
+function render() {
+  const q = searchTerm.toLowerCase();
+  const filtered = ORGS.filter(org => {
+    const matchCat = activeFilter === 'all' || org.cats.includes(activeFilter);
+    const matchSearch = !q || org.name.toLowerCase().includes(q) || org.desc.toLowerCase().includes(q) ||
+      org.tags.some(t => t.toLowerCase().includes(q)) || org.cats.some(c => getCatLabel(c).toLowerCase().includes(q));
+    return matchCat && matchSearch;
+  });
+
+  document.getElementById('countDisplay').textContent = `${filtered.length} of ${ORGS.length} organizations`;
+
+  const main = document.getElementById('mainContent');
+  if (filtered.length === 0) {
+    main.innerHTML = '<div class="empty-state">No organizations match your search.<br><br>Know one that should be here? <a href="#" id="suggestLink" style="color:var(--cat-consumer)">Suggest it ↗</a></div>';
+    return;
+  }
+
+  if (activeFilter !== 'all') {
+    main.innerHTML = renderSection(getCat(activeFilter), filtered);
+  } else {
+    main.innerHTML = CATEGORIES.map(cat => {
+      const orgs = filtered.filter(o => o.cats.includes(cat.id));
+      return orgs.length ? renderSection(cat, orgs) : '';
+    }).join('');
+  }
+}
+
+function renderSection(cat, orgs) {
+  return `
+    <div class="category-section">
+      <div class="category-header">
+        <div class="cat-dot" style="background:${cat.color}"></div>
+        <h2>${cat.label}</h2>
+        <span class="cat-count">${orgs.length} ${orgs.length === 1 ? 'entry' : 'entries'}</span>
+      </div>
+      <div class="card-grid">${orgs.map((org, i) => renderCard(org, i)).join('')}</div>
+    </div>`;
+}
+
+function renderCard(org, i) {
+  const stripeParts = org.cats.map(c => `<div style="flex:1;background:${getCatColor(c)};opacity:0.6"></div>`).join('');
+  const multiDots = org.cats.length > 1
+    ? `<div class="multi-badge" title="Spans: ${org.cats.map(getCatLabel).join(', ')}">${org.cats.map(c => `<div class="multi-dot" style="background:${getCatColor(c)}"></div>`).join('')}</div>` : '';
+  const safe = encodeURIComponent(JSON.stringify(org));
+  const shortDesc = org.desc.length > 108 ? org.desc.slice(0, 108) + '…' : org.desc;
+  return `
+    <div class="card" style="animation-delay:${i*0.025}s" onclick="openModal('${safe}')">
+      <div class="card-stripe">${stripeParts}</div>
+      <div class="card-name">${org.name}</div>
+      <div class="card-type">${org.type}</div>
+      <div class="card-desc">${shortDesc}</div>
+      <div class="card-footer">
+        ${org.tags.slice(0,3).map(t => `<span class="tag">${t}</span>`).join('')}
+        ${multiDots}
+      </div>
+    </div>`;
+}
+
+// ─── Modal ────────────────────────────────────────────────
+function openModal(encoded) {
+  const org = JSON.parse(decodeURIComponent(encoded));
+  const pc = getCatColor(org.cats[0]);
+  document.getElementById('modalCats').innerHTML = org.cats.map(c =>
+    `<span class="modal-cat-pill" style="background:${getCatColor(c)}">${getCatLabel(c)}</span>`).join('');
+  document.getElementById('modalName').textContent = org.name;
+  document.getElementById('modalType').textContent = org.type;
+  document.getElementById('modalDesc').textContent = org.desc;
+  document.getElementById('modalTags').innerHTML = org.tags.map(t =>
+    `<span class="tag" style="background:${pc}22;color:${pc}">${t}</span>`).join('');
+  const linkEl = document.getElementById('modalLink');
+  if (org.url) { linkEl.href = org.url; linkEl.textContent = '↗ ' + org.url.replace('https://',''); linkEl.style.display = 'inline'; }
+  else { linkEl.style.display = 'none'; }
+  document.getElementById('modal').style.borderTop = `3px solid ${pc}`;
+  document.getElementById('modalOverlay').classList.add('open');
+}
+
+document.getElementById('modalClose').onclick = () => document.getElementById('modalOverlay').classList.remove('open');
+document.getElementById('modalOverlay').onclick = e => { if (e.target.id === 'modalOverlay') document.getElementById('modalOverlay').classList.remove('open'); };
+document.addEventListener('keydown', e => { if (e.key === 'Escape') document.getElementById('modalOverlay').classList.remove('open'); });
+document.getElementById('searchInput').addEventListener('input', e => { searchTerm = e.target.value; render(); });
+
+loadData();
+</script>
+</body>
+</html>

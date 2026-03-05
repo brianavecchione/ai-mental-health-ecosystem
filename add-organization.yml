@@ -1,0 +1,87 @@
+name: "➕ Suggest an Organization"
+description: "Nominate a new organization, project, or community to add to the ecosystem map."
+title: "[ADD] "
+labels: ["new entry", "needs review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing! Fill out as much as you can — entries will be reviewed and added by a maintainer.
+        
+        **Before submitting:** please search [existing issues](../../issues) and the [live map](https://YOUR_USERNAME.github.io/YOUR_REPO) to check if this org is already listed.
+
+  - type: input
+    id: name
+    attributes:
+      label: Organization / Project Name
+      placeholder: "e.g. Woebot Health"
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: Website URL
+      placeholder: "https://example.org"
+
+  - type: dropdown
+    id: cats
+    attributes:
+      label: Primary Category
+      description: "Select the single best fit. You can suggest additional categories in the notes below."
+      options:
+        - Consumer Apps (B2C)
+        - Clinical & Enterprise (B2B)
+        - Research & Academia
+        - Nonprofits & Advocacy
+        - Policy & Government
+        - Investors & Funders
+        - Civil Society & NGOs
+        - Professional Associations
+        - Media, Journalists & Influencers
+        - Philanthropy
+        - Private Sector / Tech
+        - Impacted Communities
+    validations:
+      required: true
+
+  - type: input
+    id: type
+    attributes:
+      label: Organization Type
+      description: "A short label describing what kind of entity this is."
+      placeholder: "e.g. Advocacy Nonprofit, Research Lab, VC Fund, User Community"
+    validations:
+      required: true
+
+  - type: textarea
+    id: desc
+    attributes:
+      label: Description (2–4 sentences)
+      description: "Describe what this org does and why it's relevant to the AI × mental health space. Be specific — what's their role, stance, or impact?"
+      placeholder: "This organization researches / advocates for / builds / funds…"
+    validations:
+      required: true
+
+  - type: input
+    id: tags
+    attributes:
+      label: Tags (comma-separated)
+      description: "3–6 short keywords that describe focus areas."
+      placeholder: "e.g. CBT, youth, privacy, crisis, equity"
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes (optional)
+      description: "Anything else to add — additional categories, caveats, controversy, connections to other listed orgs, etc."
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched the map and issues — this org is not already listed
+          required: true
+        - label: This organization is genuinely relevant to AI and mental health / emotional wellbeing
+          required: true

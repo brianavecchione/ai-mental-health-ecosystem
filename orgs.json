@@ -1,0 +1,786 @@
+[
+  {
+    "name": "Woebot Health",
+    "cats": ["consumer"],
+    "type": "AI Chatbot / App",
+    "desc": "Pioneer AI-based CBT chatbot for emotional support, anxiety, and depression. Clinician-designed and FDA Breakthrough Device designated.",
+    "tags": ["CBT", "chatbot", "FDA", "depression", "anxiety"],
+    "url": "https://woebothealth.com"
+  },
+  {
+    "name": "Wysa",
+    "cats": ["consumer", "clinical"],
+    "type": "AI Chatbot / App",
+    "desc": "AI-powered mental health support app using evidence-based techniques. Serves consumers and enterprise with human therapist escalation path.",
+    "tags": ["CBT", "emotional support", "B2B2C", "global"],
+    "url": "https://wysa.com"
+  },
+  {
+    "name": "Replika",
+    "cats": ["consumer"],
+    "type": "AI Companion App",
+    "desc": "AI companion for emotional connection and social support. Controversial for romantic/friendship personas; large user base with significant organized advocacy community.",
+    "tags": ["companion", "loneliness", "social AI", "controversial"],
+    "url": "https://replika.ai"
+  },
+  {
+    "name": "Youper",
+    "cats": ["consumer"],
+    "type": "AI Emotional Health App",
+    "desc": "AI-powered emotional health assistant using CBT and ACT techniques. Tracks mood, guides self-reflection, and connects to therapists.",
+    "tags": ["CBT", "ACT", "mood tracking", "self-care"],
+    "url": "https://youper.ai"
+  },
+  {
+    "name": "Headspace",
+    "cats": ["consumer", "clinical"],
+    "type": "Meditation / Wellbeing App",
+    "desc": "Mindfulness and meditation app integrating AI personalization. One of the largest mental wellness apps globally; partners with healthcare systems and employers.",
+    "tags": ["mindfulness", "meditation", "sleep", "AI personalization"],
+    "url": "https://headspace.com"
+  },
+  {
+    "name": "Calm",
+    "cats": ["consumer"],
+    "type": "Meditation / Wellbeing App",
+    "desc": "Sleep, meditation, and relaxation app integrating AI for personalized content. Partners with healthcare systems and employers.",
+    "tags": ["sleep", "meditation", "wellness", "enterprise"],
+    "url": "https://calm.com"
+  },
+  {
+    "name": "Earkick",
+    "cats": ["consumer"],
+    "type": "AI Mental Health App",
+    "desc": "Real-time AI mental health companion for anxiety management; no account required. Emphasizes privacy-first design.",
+    "tags": ["anxiety", "privacy", "real-time", "no-account"],
+    "url": "https://earkick.com"
+  },
+  {
+    "name": "Koko (Noni)",
+    "cats": ["consumer", "research"],
+    "type": "AI Peer Support",
+    "desc": "AI-assisted peer support platform blending human and AI responses for emotional support at scale. Originated as an MIT academic research project.",
+    "tags": ["peer support", "human-AI hybrid", "scale", "research"],
+    "url": "https://kokocares.org"
+  },
+  {
+    "name": "Pi (by Inflection AI)",
+    "cats": ["consumer"],
+    "type": "AI Personal Companion",
+    "desc": "Conversational AI positioned as a personal assistant and emotional support companion. Subsequently acquired by Microsoft.",
+    "tags": ["companion", "conversational AI", "general purpose"],
+    "url": "https://pi.ai"
+  },
+  {
+    "name": "Character.AI",
+    "cats": ["consumer"],
+    "type": "AI Character Platform",
+    "desc": "Platform for AI character personas. Widely used by teens for companionship; under significant scrutiny for mental health risks to youth.",
+    "tags": ["companion", "youth", "risk", "social", "controversial"],
+    "url": "https://character.ai"
+  },
+  {
+    "name": "Spring Health",
+    "cats": ["consumer", "clinical"],
+    "type": "Precision Mental Health Platform",
+    "desc": "Precision mental healthcare platform using AI to match users to care pathways. Covers therapy, coaching, and medication management.",
+    "tags": ["precision care", "matching", "therapy", "EAP"],
+    "url": "https://springhealth.com"
+  },
+  {
+    "name": "Talkspace",
+    "cats": ["consumer", "clinical"],
+    "type": "Telemental Health",
+    "desc": "Large telehealth therapy platform integrating AI for therapist matching, documentation, and care navigation.",
+    "tags": ["telehealth", "therapy", "AI matching", "insurance"],
+    "url": "https://talkspace.com"
+  },
+  {
+    "name": "BetterHelp",
+    "cats": ["consumer", "clinical"],
+    "type": "Telemental Health",
+    "desc": "Large online therapy platform integrating AI tools for therapist matching and messaging support.",
+    "tags": ["telehealth", "therapy", "scale", "matching"],
+    "url": "https://betterhelp.com"
+  },
+  {
+    "name": "Limbic",
+    "cats": ["clinical"],
+    "type": "Clinical AI",
+    "desc": "AI-powered mental health triage and assessment used by NHS in the UK. Automates referrals into talking therapies (IAPT/TALKIAD).",
+    "tags": ["NHS", "triage", "IAPT", "UK", "clinical"],
+    "url": "https://limbic.ai"
+  },
+  {
+    "name": "Eleos Health",
+    "cats": ["clinical"],
+    "type": "Clinical AI Documentation",
+    "desc": "AI ambient documentation tool for behavioral health clinicians. Reduces administrative burden through automated session notes.",
+    "tags": ["ambient AI", "documentation", "clinician tools", "burnout"],
+    "url": "https://eleoshealth.com"
+  },
+  {
+    "name": "Nabla",
+    "cats": ["clinical"],
+    "type": "Clinical AI Documentation",
+    "desc": "AI copilot for clinicians: ambient note-taking, summarization, and care coordination for mental and physical health.",
+    "tags": ["ambient AI", "EHR", "documentation", "clinician"],
+    "url": "https://nabla.com"
+  },
+  {
+    "name": "Lyra Health",
+    "cats": ["clinical"],
+    "type": "Enterprise Mental Health",
+    "desc": "Employer-facing mental health platform using AI-driven measurement-based care. Covers therapy, coaching, and medication.",
+    "tags": ["enterprise", "measurement-based care", "EAP", "employer"],
+    "url": "https://lyrahealth.com"
+  },
+  {
+    "name": "Quartet Health",
+    "cats": ["clinical"],
+    "type": "Collaborative Care AI",
+    "desc": "AI platform integrating behavioral and physical health, facilitating care coordination between providers and payers.",
+    "tags": ["collaborative care", "integration", "provider", "payer"],
+    "url": "https://quartethealth.com"
+  },
+  {
+    "name": "Osmind",
+    "cats": ["clinical"],
+    "type": "Clinical EHR / AI",
+    "desc": "EHR and outcomes platform for ketamine, TMS, and other innovative psychiatric treatments. Uses AI for outcomes tracking.",
+    "tags": ["EHR", "ketamine", "TMS", "outcomes", "psychiatry"],
+    "url": "https://osmind.org"
+  },
+  {
+    "name": "DeepScribe",
+    "cats": ["clinical"],
+    "type": "Ambient AI Documentation",
+    "desc": "Ambient AI medical scribe for behavioral health and primary care. Captures and structures clinical conversations automatically.",
+    "tags": ["ambient AI", "scribe", "documentation", "behavioral health"],
+    "url": "https://deepscribe.ai"
+  },
+  {
+    "name": "Innerworld",
+    "cats": ["clinical", "community"],
+    "type": "VR / Avatar Therapy",
+    "desc": "Metaverse-based peer support and therapy platform using avatars for anonymity, targeting anxiety and depression.",
+    "tags": ["VR", "metaverse", "peer support", "avatar", "anonymity"],
+    "url": "https://innerworld.com"
+  },
+  {
+    "name": "Epic Systems",
+    "cats": ["clinical", "private"],
+    "type": "Health IT",
+    "desc": "Dominant EHR vendor integrating AI suicide risk scoring, depression screening (PHQ-9 automation), and behavioral health workflows into hospital systems nationwide.",
+    "tags": ["EHR", "suicide risk", "depression screening", "hospital"],
+    "url": "https://epic.com"
+  },
+  {
+    "name": "Stanford HAI",
+    "cats": ["research", "policy"],
+    "type": "Academic Research Center",
+    "desc": "Stanford's Human-Centered AI Institute funds and conducts research on AI in mental health, including clinical efficacy and governance ethics.",
+    "tags": ["ethics", "clinical AI", "HAI", "Stanford"],
+    "url": "https://hai.stanford.edu"
+  },
+  {
+    "name": "MIT Media Lab — Affective Computing",
+    "cats": ["research"],
+    "type": "Academic Research Group",
+    "desc": "Rosalind Picard's group pioneered affective computing — the science of machines that recognize and respond to human emotions. Foundational to the field.",
+    "tags": ["affective computing", "emotion AI", "wearables", "MIT"],
+    "url": "https://media.mit.edu/groups/affective-computing"
+  },
+  {
+    "name": "CMU Language Technologies Institute",
+    "cats": ["research"],
+    "type": "Academic Research",
+    "desc": "Research on NLP for mental health signal detection in speech and text, including depression and suicide risk assessment models.",
+    "tags": ["NLP", "speech", "suicide detection", "CMU"],
+    "url": "https://lti.cs.cmu.edu"
+  },
+  {
+    "name": "USC Institute for Creative Technologies",
+    "cats": ["research"],
+    "type": "Academic Research",
+    "desc": "Develops Ellie, a virtual human interviewer for detecting depression and PTSD in veterans. Pioneering work in avatar-based mental health assessment.",
+    "tags": ["virtual human", "PTSD", "veterans", "avatar", "USC"],
+    "url": "https://ict.usc.edu"
+  },
+  {
+    "name": "Oxford Internet Institute",
+    "cats": ["research", "policy"],
+    "type": "Academic Research",
+    "desc": "Research on digital mental health, screen time, social media harms, and AI impacts on adolescent wellbeing. Highly influential in policy debates.",
+    "tags": ["digital health", "social media", "adolescents", "Oxford"],
+    "url": "https://oii.ox.ac.uk"
+  },
+  {
+    "name": "Harvard T.H. Chan School of Public Health",
+    "cats": ["research"],
+    "type": "Academic Research",
+    "desc": "Research programs studying AI, social media, and population mental health outcomes from a public health epidemiology lens.",
+    "tags": ["public health", "population", "epidemiology", "Harvard"],
+    "url": "https://hsph.harvard.edu"
+  },
+  {
+    "name": "NIMH",
+    "cats": ["research", "policy"],
+    "type": "Federal Research Institute",
+    "desc": "National Institute of Mental Health funds research on AI biomarkers, precision psychiatry, and digital phenotyping for mental health conditions.",
+    "tags": ["federal", "precision psychiatry", "biomarkers", "NIMH"],
+    "url": "https://nimh.nih.gov"
+  },
+  {
+    "name": "Alan Turing Institute",
+    "cats": ["research", "policy"],
+    "type": "National AI Research Institute",
+    "desc": "UK's national AI institute conducting research on responsible AI in healthcare including mental health applications and governance frameworks.",
+    "tags": ["UK", "responsible AI", "healthcare", "ethics"],
+    "url": "https://turing.ac.uk"
+  },
+  {
+    "name": "Brown University ARIA",
+    "cats": ["research"],
+    "type": "Academic Research Institute",
+    "desc": "Brown's AI Research Institute on Interaction for AI Assistants researches human-AI interaction including conversational agents in therapeutic and support contexts.",
+    "tags": ["human-AI interaction", "conversational AI", "Brown", "ARIA"],
+    "url": "https://brown.edu"
+  },
+  {
+    "name": "University of Washington (HCDE)",
+    "cats": ["research"],
+    "type": "Academic Research",
+    "desc": "UW Human Centered Design & Engineering research on accessible mental health technology design, community-participatory approaches, and human-centered AI.",
+    "tags": ["human-centered AI", "accessibility", "design", "UW"],
+    "url": "https://hcde.uw.edu"
+  },
+  {
+    "name": "Human Line Project",
+    "cats": ["research", "nonprofit"],
+    "type": "Research / Applied Project",
+    "desc": "Project exploring the boundary between human and AI-delivered mental health support, including research on user trust, safety, and outcomes.",
+    "tags": ["human-AI boundary", "trust", "safety", "outcomes"],
+    "url": ""
+  },
+  {
+    "name": "NIST AI Safety Institute",
+    "cats": ["research", "policy"],
+    "type": "Federal Standards Body",
+    "desc": "Develops AI Risk Management Frameworks (AI RMF) applied to high-stakes health AI. Increasingly relevant to mental health AI safety standards.",
+    "tags": ["standards", "AI RMF", "risk management", "NIST", "federal"],
+    "url": "https://nist.gov/artificial-intelligence"
+  },
+  {
+    "name": "Data & Society Research Institute",
+    "cats": ["research", "civil"],
+    "type": "Research / Civil Society",
+    "desc": "Researches social and cultural implications of data-centric technologies including mental health data practices, surveillance, crisis tech, and AI care systems. Produces influential investigative reports.",
+    "tags": ["data", "surveillance", "crisis tech", "AI care", "social impact"],
+    "url": "https://datasociety.net"
+  },
+  {
+    "name": "Center for Humane Technology",
+    "cats": ["nonprofit", "civil", "media"],
+    "type": "Advocacy / Nonprofit",
+    "desc": "Advocates for technology design that protects human wellbeing; focused on social media mental health harms, AI risks, and broad public education campaigns.",
+    "tags": ["advocacy", "tech ethics", "social media", "youth", "CHT"],
+    "url": "https://humanetech.com"
+  },
+  {
+    "name": "Mental Health America",
+    "cats": ["nonprofit", "civil", "professional"],
+    "type": "Advocacy Nonprofit",
+    "desc": "National nonprofit championing mental health; engaged on digital mental health tools, equitable access, and technology standards for the field.",
+    "tags": ["advocacy", "equity", "access", "national"],
+    "url": "https://mhanational.org"
+  },
+  {
+    "name": "NAMI",
+    "cats": ["nonprofit", "civil", "professional"],
+    "type": "Advocacy Nonprofit",
+    "desc": "National Alliance on Mental Illness — largest grassroots mental health org in the US; engaged on AI-assisted peer support and crisis line technology.",
+    "tags": ["grassroots", "peer support", "advocacy", "helpline"],
+    "url": "https://nami.org"
+  },
+  {
+    "name": "Crisis Text Line",
+    "cats": ["nonprofit", "civil"],
+    "type": "Digital Crisis Nonprofit",
+    "desc": "Crisis support via text using AI and NLP to triage and route conversations. Controversy over data-sharing practices highlighted field-wide ethics gaps.",
+    "tags": ["crisis", "text", "AI triage", "data ethics", "controversy"],
+    "url": "https://crisistextline.org"
+  },
+  {
+    "name": "Trevor Project",
+    "cats": ["nonprofit", "community"],
+    "type": "LGBTQ+ Crisis Nonprofit",
+    "desc": "LGBTQ+ youth crisis intervention; developed its own AI model trained on conversations to extend counselor capacity and reduce response times.",
+    "tags": ["LGBTQ+", "youth", "crisis", "AI counselor", "suicide prevention"],
+    "url": "https://thetrevorproject.org"
+  },
+  {
+    "name": "988 Suicide & Crisis Lifeline",
+    "cats": ["nonprofit", "policy"],
+    "type": "Federal Crisis Service",
+    "desc": "US national crisis line integrating technology and AI-assisted routing. Federally funded, locally operated network replacing the old 1-800 number.",
+    "tags": ["crisis", "suicide prevention", "988", "federal", "routing"],
+    "url": "https://988lifeline.org"
+  },
+  {
+    "name": "American Foundation for Suicide Prevention",
+    "cats": ["nonprofit", "policy"],
+    "type": "Advocacy Nonprofit",
+    "desc": "Funds research and advocates for safe messaging on AI platforms; works with tech companies on suicide prevention guidelines and content moderation.",
+    "tags": ["suicide prevention", "safe messaging", "tech policy", "AFSP"],
+    "url": "https://afsp.org"
+  },
+  {
+    "name": "Fairplay",
+    "cats": ["nonprofit", "civil", "policy"],
+    "type": "Child Advocacy Nonprofit",
+    "desc": "Formerly Campaign for a Commercial-Free Childhood. Advocates against exploitative commercial practices targeting children, including AI apps that may harm youth mental health.",
+    "tags": ["children", "youth", "advertising", "exploitation", "advocacy"],
+    "url": "https://fairplayforkids.org"
+  },
+  {
+    "name": "Hearing Voices Network",
+    "cats": ["nonprofit", "community"],
+    "type": "Peer Community / Nonprofit",
+    "desc": "International network of people who hear voices and experience unusual perceptions; a critical voice on AI tools that may mischaracterize lived psychiatric experience.",
+    "tags": ["lived experience", "psychosis", "peer", "international"],
+    "url": "https://hearingvoicesusa.org"
+  },
+  {
+    "name": "SAMHSA",
+    "cats": ["policy"],
+    "type": "Federal Agency",
+    "desc": "Substance Abuse and Mental Health Services Administration sets standards for digital mental health tools and funds technology pilots nationally.",
+    "tags": ["federal", "standards", "funding", "SAMHSA"],
+    "url": "https://samhsa.gov"
+  },
+  {
+    "name": "FDA Digital Health Center of Excellence",
+    "cats": ["policy"],
+    "type": "Regulatory Agency",
+    "desc": "Oversees Software as a Medical Device (SaMD) including AI mental health apps. Provides guidance on clinical AI tool approval pathways and regulatory frameworks.",
+    "tags": ["FDA", "SaMD", "regulation", "clinical AI", "approval"],
+    "url": "https://fda.gov/medical-devices/digital-health-center-excellence"
+  },
+  {
+    "name": "FTC",
+    "cats": ["policy", "civil"],
+    "type": "Regulatory Agency",
+    "desc": "Federal Trade Commission monitors deceptive AI claims in mental health apps, consumer data monetization, and unfair commercial practices in digital health.",
+    "tags": ["consumer protection", "deception", "data", "FTC"],
+    "url": "https://ftc.gov"
+  },
+  {
+    "name": "European Commission (EU AI Act)",
+    "cats": ["policy"],
+    "type": "Regulatory Body (EU)",
+    "desc": "The EU AI Act classifies AI for mental health and wellbeing under high-risk or limited-risk categories requiring transparency, oversight, and mandatory human review.",
+    "tags": ["EU", "AI Act", "high-risk", "regulation", "Europe"],
+    "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+  },
+  {
+    "name": "WHO (Digital Mental Health)",
+    "cats": ["policy"],
+    "type": "Intergovernmental Organization",
+    "desc": "WHO has issued guidance on digital mental health interventions, chatbot ethics, and AI integration into global mental health systems and crisis response.",
+    "tags": ["WHO", "global", "guidance", "ethics", "digital MH"],
+    "url": "https://who.int"
+  },
+  {
+    "name": "NCSL",
+    "cats": ["policy"],
+    "type": "Legislative Support Organization",
+    "desc": "National Conference of State Legislatures provides research and analysis to US state legislatures on AI in health, mental health app regulation, and data privacy bills.",
+    "tags": ["state legislatures", "legislation", "NCSL", "policy analysis"],
+    "url": "https://ncsl.org"
+  },
+  {
+    "name": "Coalition of 42 Attorneys General",
+    "cats": ["policy"],
+    "type": "Multistate Government Action",
+    "desc": "Bipartisan coalition of state AGs investigating and litigating against social media platforms and AI products for youth mental health harms and deceptive design.",
+    "tags": ["AGs", "litigation", "social media", "youth", "state government"],
+    "url": ""
+  },
+  {
+    "name": "CDT (Center for Democracy & Technology)",
+    "cats": ["policy", "civil", "research"],
+    "type": "Policy Research / Advocacy",
+    "desc": "Conducts policy research and advocacy on civil rights in AI, mental health data privacy, AI discrimination in healthcare, and platform accountability.",
+    "tags": ["civil liberties", "data privacy", "discrimination", "CDT"],
+    "url": "https://cdt.org"
+  },
+  {
+    "name": "OECD AI in Health",
+    "cats": ["policy"],
+    "type": "Intergovernmental Organization",
+    "desc": "Publishes policy guidance on AI in healthcare including mental health AI governance, safety standards, and equity frameworks across member countries.",
+    "tags": ["OECD", "governance", "international", "frameworks"],
+    "url": "https://oecd.org/health/artificial-intelligence"
+  },
+  {
+    "name": "Bipartisan Policy Center",
+    "cats": ["policy"],
+    "type": "Policy Think Tank",
+    "desc": "Works on mental health policy including telehealth, digital tools, and AI integration into behavioral health systems across partisan lines.",
+    "tags": ["think tank", "bipartisan", "telehealth", "policy"],
+    "url": "https://bipartisanpolicy.org"
+  },
+  {
+    "name": "PAI (Partnership on AI)",
+    "cats": ["policy", "civil", "research"],
+    "type": "Multi-stakeholder Initiative",
+    "desc": "Multi-stakeholder org bringing together civil society, academia, and industry to develop responsible AI practices; runs working groups on AI in sensitive sectors including mental health.",
+    "tags": ["multi-stakeholder", "responsible AI", "industry", "civil society", "PAI"],
+    "url": "https://partnershiponai.org"
+  },
+  {
+    "name": "Andreessen Horowitz (a16z Bio)",
+    "cats": ["investors"],
+    "type": "Venture Capital",
+    "desc": "a16z Bio fund has backed multiple AI mental health startups. Significant thought leadership shaping the digital health startup ecosystem.",
+    "tags": ["VC", "a16z", "digital health", "bio fund"],
+    "url": "https://a16z.com/bio"
+  },
+  {
+    "name": "General Catalyst",
+    "cats": ["investors"],
+    "type": "Venture Capital",
+    "desc": "Major investor in mental health tech including Spring Health and Lyra. Health Assurance thesis focuses on preventive, AI-driven care at population scale.",
+    "tags": ["VC", "health assurance", "Spring Health", "Lyra"],
+    "url": "https://generalcatalyst.com"
+  },
+  {
+    "name": "Bessemer Venture Partners",
+    "cats": ["investors"],
+    "type": "Venture Capital",
+    "desc": "Active mental health tech investor with portfolio across multiple AI-assisted behavioral health platforms.",
+    "tags": ["VC", "behavioral health", "portfolio"],
+    "url": "https://bvp.com"
+  },
+  {
+    "name": "Google Ventures (GV)",
+    "cats": ["investors"],
+    "type": "Corporate VC",
+    "desc": "GV portfolio includes mental health apps and AI health tools. Google integrates mental health resources and crisis information into Search and Maps at scale.",
+    "tags": ["corporate VC", "Google", "search", "mental health"],
+    "url": "https://gv.com"
+  },
+  {
+    "name": "Sequoia Capital",
+    "cats": ["investors"],
+    "type": "Venture Capital",
+    "desc": "Active digital health investor with mental health portfolio companies; shapes startup ecosystem direction and capital formation for the space.",
+    "tags": ["VC", "digital health", "portfolio", "Sequoia"],
+    "url": "https://sequoiacap.com"
+  },
+  {
+    "name": "Electronic Frontier Foundation (EFF)",
+    "cats": ["civil", "policy"],
+    "type": "Digital Rights NGO",
+    "desc": "Advocates for privacy and civil liberties in AI; critical watchdog on mental health data exploitation by apps, insurers, and AI platforms.",
+    "tags": ["privacy", "civil liberties", "data rights", "EFF"],
+    "url": "https://eff.org"
+  },
+  {
+    "name": "AI Now Institute",
+    "cats": ["civil", "research"],
+    "type": "Research / Advocacy",
+    "desc": "Researches social implications of AI including mental health surveillance, algorithmic bias in healthcare, labor displacement, and corporate power.",
+    "tags": ["social impact", "surveillance", "bias", "AI Now"],
+    "url": "https://ainowinstitute.org"
+  },
+  {
+    "name": "Algorithmic Justice League",
+    "cats": ["civil", "research"],
+    "type": "Advocacy / Research",
+    "desc": "Highlights harms of biased AI systems; directly relevant to mental health AI that may disadvantage or misdiagnose marginalized communities.",
+    "tags": ["bias", "equity", "justice", "AJL"],
+    "url": "https://ajl.org"
+  },
+  {
+    "name": "Access Now",
+    "cats": ["civil", "policy"],
+    "type": "Digital Rights NGO",
+    "desc": "International digital rights organization monitoring AI mental health tools for privacy violations and discriminatory design across global contexts.",
+    "tags": ["global", "privacy", "human rights", "digital rights"],
+    "url": "https://accessnow.org"
+  },
+  {
+    "name": "Center for AI Safety",
+    "cats": ["civil", "research"],
+    "type": "AI Safety NGO",
+    "desc": "Advocates for AI safety broadly; increasingly relevant as AI mental health tools are deployed at scale with vulnerable populations.",
+    "tags": ["AI safety", "vulnerable populations", "risk"],
+    "url": "https://safe.ai"
+  },
+  {
+    "name": "EPIC (Electronic Privacy Information Center)",
+    "cats": ["civil", "policy"],
+    "type": "Privacy Advocacy NGO",
+    "desc": "DC-based privacy advocacy nonprofit focused on AI, data protection, and consumer rights. Active on mental health app data practices and health privacy law.",
+    "tags": ["privacy", "EPIC", "data protection", "consumer rights"],
+    "url": "https://epic.org"
+  },
+  {
+    "name": "Consumer Federation of America",
+    "cats": ["civil", "policy"],
+    "type": "Consumer Advocacy NGO",
+    "desc": "Broad-based consumer advocacy organization; engaged on AI consumer protection including deceptive mental health app claims, data monetization, and digital safety.",
+    "tags": ["consumer protection", "advocacy", "deception", "data"],
+    "url": "https://consumerfed.org"
+  },
+  {
+    "name": "Public Citizen",
+    "cats": ["civil", "policy"],
+    "type": "Public Interest Advocacy",
+    "desc": "Public interest advocacy group active on AI healthcare regulation, pharmaceutical industry accountability, and consumer protection in digital health markets.",
+    "tags": ["public interest", "healthcare", "regulation", "consumer"],
+    "url": "https://citizen.org"
+  },
+  {
+    "name": "Youth for America",
+    "cats": ["civil", "community", "nonprofit"],
+    "type": "Youth Advocacy Organization",
+    "desc": "Youth-centered advocacy organization working on digital safety, social media harms, and technology policy affecting young people's mental health and development.",
+    "tags": ["youth", "digital safety", "social media", "advocacy"],
+    "url": ""
+  },
+  {
+    "name": "Big Brother Watch",
+    "cats": ["civil", "policy"],
+    "type": "Civil Liberties NGO (UK)",
+    "desc": "UK civil liberties org tracking AI surveillance in healthcare and mental health contexts, particularly NHS AI deployments and automated decision-making.",
+    "tags": ["UK", "surveillance", "NHS", "civil liberties"],
+    "url": "https://bigbrotherwatch.org.uk"
+  },
+  {
+    "name": "American Psychiatric Association",
+    "cats": ["professional", "policy"],
+    "type": "Professional Association",
+    "desc": "Publishes guidance for psychiatrists on AI tools, digital mental health, telehealth, and ethical use of technology in clinical practice.",
+    "tags": ["psychiatry", "ethics", "clinical guidance", "APA"],
+    "url": "https://psychiatry.org"
+  },
+  {
+    "name": "American Psychological Association",
+    "cats": ["professional", "civil", "policy"],
+    "type": "Professional Association",
+    "desc": "Sets ethical standards for psychologists using AI tools; monitors AI-delivered therapy efficacy and professional competency questions in digital practice.",
+    "tags": ["psychology", "ethics", "competency", "standards"],
+    "url": "https://apa.org"
+  },
+  {
+    "name": "NASW (National Association of Social Workers)",
+    "cats": ["professional"],
+    "type": "Professional Association",
+    "desc": "Developing ethical guidance on AI use in social work and mental health case management. Concerned with automation, equity, and displacement in social services.",
+    "tags": ["social work", "ethics", "case management", "NASW"],
+    "url": "https://naswdc.org"
+  },
+  {
+    "name": "AMIA (American Medical Informatics Association)",
+    "cats": ["professional", "research"],
+    "type": "Professional Association",
+    "desc": "Drives research and practice standards for AI in clinical settings including behavioral health informatics, EHR integration, and AI decision support.",
+    "tags": ["informatics", "clinical AI", "standards", "AMIA"],
+    "url": "https://amia.org"
+  },
+  {
+    "name": "International Society for Mental Health Online (ISMHO)",
+    "cats": ["professional"],
+    "type": "Professional Association",
+    "desc": "Sets guidelines and practices for online mental health services including AI-augmented therapy, digital interventions, and e-therapy standards.",
+    "tags": ["online therapy", "guidelines", "international", "ISMHO"],
+    "url": "https://ismho.org"
+  },
+  {
+    "name": "STAT News",
+    "cats": ["media"],
+    "type": "Specialist Health Media",
+    "desc": "Authoritative health and science journalism covering AI mental health startups, clinical evidence debates, regulatory decisions, and policy developments.",
+    "tags": ["journalism", "health media", "investigative", "STAT"],
+    "url": "https://statnews.com"
+  },
+  {
+    "name": "MIT Technology Review",
+    "cats": ["media"],
+    "type": "Tech Media",
+    "desc": "In-depth technology journalism and analysis on AI mental health products, ethics, clinical evidence standards, and societal implications.",
+    "tags": ["tech journalism", "analysis", "MIT TR"],
+    "url": "https://technologyreview.com"
+  },
+  {
+    "name": "The Markup",
+    "cats": ["media", "civil"],
+    "type": "Investigative Tech Journalism",
+    "desc": "Investigative journalism on technology harms; has broken stories on mental health app data practices, ad targeting of vulnerable users, and exploitation.",
+    "tags": ["investigative", "data", "privacy", "The Markup"],
+    "url": "https://themarkup.org"
+  },
+  {
+    "name": "Baratunde Thurston",
+    "cats": ["media"],
+    "type": "Journalist / Podcaster / Advocate",
+    "desc": "Writer, comedian, and technology culture commentator. Host of \"How to Citizen\" — covers tech's effects on democracy, mental health, and community.",
+    "tags": ["podcast", "journalist", "tech culture", "democracy"],
+    "url": "https://baratunde.com"
+  },
+  {
+    "name": "Dr. Alfiee Breland-Noble (AAKOMA Project)",
+    "cats": ["media", "nonprofit", "community"],
+    "type": "Advocate / Researcher / Media",
+    "desc": "Mental health advocate and researcher focused on mental health in communities of color; public commentator on AI equity in mental health tools and youth wellbeing.",
+    "tags": ["equity", "BIPOC", "media", "advocacy", "youth"],
+    "url": "https://aakomaproject.org"
+  },
+  {
+    "name": "The Verge",
+    "cats": ["media"],
+    "type": "Tech Media",
+    "desc": "Broad tech journalism outlet with consistent coverage of consumer mental health AI, chatbot controversies, platform harms, and teen safety debates.",
+    "tags": ["tech media", "consumer", "chatbots", "platform harms"],
+    "url": "https://theverge.com"
+  },
+  {
+    "name": "Mad in America",
+    "cats": ["media", "community"],
+    "type": "Media / Community Platform",
+    "desc": "Platform for those critical of mainstream psychiatry; covers AI mental health tech through a survivor and critical psychiatry lens. Publishes research critiques and personal narratives.",
+    "tags": ["critical psychiatry", "survivor", "media", "research critique"],
+    "url": "https://madinamerica.com"
+  },
+  {
+    "name": "Wellcome Trust",
+    "cats": ["philanthropy", "research"],
+    "type": "Global Health Philanthropy",
+    "desc": "One of the world's largest funders of mental health research; major investor in digital mental health, AI therapeutics, and global mental health innovation.",
+    "tags": ["UK", "global", "research funding", "digital MH"],
+    "url": "https://wellcome.org/what-we-do/mental-health"
+  },
+  {
+    "name": "Robert Wood Johnson Foundation",
+    "cats": ["philanthropy"],
+    "type": "US Health Philanthropy",
+    "desc": "Largest US health-focused philanthropy; funds digital mental health equity, AI ethics in healthcare, and community-based technology programs.",
+    "tags": ["foundation", "equity", "community", "RWJF"],
+    "url": "https://rwjf.org"
+  },
+  {
+    "name": "MacArthur Foundation",
+    "cats": ["philanthropy"],
+    "type": "US Philanthropy",
+    "desc": "Funds criminal justice, mental health equity, and the intersection of AI and human wellbeing across systems of care.",
+    "tags": ["equity", "justice", "human rights", "MacArthur"],
+    "url": "https://macfound.org"
+  },
+  {
+    "name": "One Mind",
+    "cats": ["philanthropy", "nonprofit"],
+    "type": "Mental Health Philanthropy",
+    "desc": "Funds brain health research and accelerates mental health innovation, including AI-assisted diagnostics, biomarkers, and therapeutics.",
+    "tags": ["brain health", "research", "diagnostics", "One Mind"],
+    "url": "https://onemind.org"
+  },
+  {
+    "name": "Cohen Veterans Network",
+    "cats": ["philanthropy", "community"],
+    "type": "Veteran-Focused Philanthropy",
+    "desc": "Funds mental health care for veterans and military families; supports AI and digital innovation in veteran mental health services and PTSD treatment.",
+    "tags": ["veterans", "PTSD", "trauma", "Cohen"],
+    "url": "https://cohenveteransnetwork.org"
+  },
+  {
+    "name": "JPB Foundation",
+    "cats": ["philanthropy"],
+    "type": "US Philanthropy",
+    "desc": "Funds poverty reduction and health equity; supports community-level mental health programs integrating accessible technology for low-income communities.",
+    "tags": ["equity", "poverty", "community", "JPB"],
+    "url": "https://jpbfoundation.org"
+  },
+  {
+    "name": "Google DeepMind",
+    "cats": ["private", "research"],
+    "type": "AI Lab / Big Tech",
+    "desc": "Research on AI models for mental health risk detection. Google integrates mental health resources into Search, YouTube, and Maps at massive population scale.",
+    "tags": ["big tech", "research", "DeepMind", "Google", "suicide prevention"],
+    "url": "https://deepmind.google"
+  },
+  {
+    "name": "Microsoft Research",
+    "cats": ["private", "research"],
+    "type": "Corporate Research Lab",
+    "desc": "Microsoft Research studies AI for mental health detection, emotional AI, and wellbeing. Azure powers many mental health AI tools; Teams integrates wellbeing features.",
+    "tags": ["big tech", "Azure", "Teams", "wellbeing", "research"],
+    "url": "https://microsoft.com/en-us/research"
+  },
+  {
+    "name": "Meta",
+    "cats": ["private"],
+    "type": "Big Tech / Platform",
+    "desc": "Owns Instagram and Facebook — at the center of the youth mental health debate. Also developing AI companions and content moderation systems affecting billions of users.",
+    "tags": ["platform", "social media", "harm", "Instagram", "AI companion"],
+    "url": "https://meta.com"
+  },
+  {
+    "name": "Apple (Mental Health Features)",
+    "cats": ["private"],
+    "type": "Big Tech",
+    "desc": "Apple Health integrates mental health logging (mood, anxiety). Research studies on depression and anxiety conducted through Apple Watch partnerships with academic institutions.",
+    "tags": ["health kit", "wearable", "mood tracking", "Apple"],
+    "url": "https://apple.com/health"
+  },
+  {
+    "name": "OpenAI",
+    "cats": ["private", "policy"],
+    "type": "AI Lab / Platform",
+    "desc": "ChatGPT widely used as an unofficial mental health support tool. OpenAI collaborates with crisis organizations on safe messaging and is under growing scrutiny as de facto mental health infrastructure.",
+    "tags": ["LLM", "ChatGPT", "safe messaging", "OpenAI"],
+    "url": "https://openai.com"
+  },
+  {
+    "name": "Salesforce Health Cloud",
+    "cats": ["private", "clinical"],
+    "type": "Enterprise Tech",
+    "desc": "Provides CRM for behavioral health providers; integrating AI for care coordination, patient engagement, and population health management.",
+    "tags": ["CRM", "behavioral health", "care coordination", "enterprise"],
+    "url": "https://salesforce.com/health"
+  },
+  {
+    "name": "r/replika (Reddit Community)",
+    "cats": ["community"],
+    "type": "User Community",
+    "desc": "Large online community of Replika AI companion users. Organized significant advocacy when Replika changed its features, demonstrating the political voice of AI companion user communities.",
+    "tags": ["Replika", "user advocacy", "companion", "Reddit", "dependency"],
+    "url": "https://reddit.com/r/replika"
+  },
+  {
+    "name": "Youth Mental Health Advocates",
+    "cats": ["community", "civil"],
+    "type": "Youth Advocacy Networks",
+    "desc": "Loosely organized networks of young people (active on TikTok, Instagram, and Discord) sharing lived experiences with AI mental health tools and advocating for safer design and policy.",
+    "tags": ["youth", "social media", "advocacy", "lived experience", "TikTok"],
+    "url": ""
+  },
+  {
+    "name": "Peer Support Space",
+    "cats": ["community"],
+    "type": "Peer Community",
+    "desc": "Online community for mental health peer support; increasingly navigating how members use AI tools alongside human peer support networks.",
+    "tags": ["peer support", "community", "hybrid support"],
+    "url": "https://peersupportspace.org"
+  },
+  {
+    "name": "NAMI Peer-to-Peer",
+    "cats": ["community", "nonprofit"],
+    "type": "Peer Community",
+    "desc": "NAMI's peer education programs connect mental health peers in recovery; intersecting with questions about AI tool use in daily life and crisis situations.",
+    "tags": ["peer education", "recovery", "NAMI", "community"],
+    "url": "https://nami.org/Support-Education/Mental-Health-Education/NAMI-Peer-to-Peer"
+  }
+]
