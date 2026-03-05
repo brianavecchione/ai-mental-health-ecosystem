@@ -2,7 +2,7 @@
 
 **A living, open-source landscape of organizations, researchers, advocates, policymakers, and communities shaping how AI intersects with mental health, therapy, and emotional wellbeing.**
 
-🔗 **[View the live map →](https://YOUR_USERNAME.github.io/YOUR_REPO)**
+🔗 **[View the live map →](https://brianavecchione.github.io/ai-mental-health-ecosystem)**
 
 ---
 
